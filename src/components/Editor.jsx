@@ -24,7 +24,7 @@ const Editor = () => {
       className={
         isExpandPreviewer
           ? "hidden"
-          : "w-[70%] h-full shadow-md shadow-neutral-600 mx-auto my-2 border border-black"
+          : "w-[70%] lg:w-[50%] h-full shadow-md shadow-neutral-600 mx-auto my-2 border border-black"
       }
     >
       <div className="bg-teal-600 flex items-center justify-between p-2 border-b border-black">
