@@ -1,5 +1,7 @@
 # Simple Markdown Previewer
 
+![Markdown Previewer](https://media.giphy.com/media/jfeuSrwQQb4x7VPMep/giphy.gif)
+
 This is a React Project to automatically parses markdown text into HTML This is useful if you're writing markdown (ultimately targeting HTML) and want quick preview.
 
 ## Tech stack
