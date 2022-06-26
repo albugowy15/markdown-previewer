@@ -1,13 +1,60 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@layer base {
+    body {
+        @apply bg-teal-400
+    }
+    p {
+        @apply my-2
+    }
+    
+    h1 {
+        @apply text-2xl font-bold border-b border-black py-3 mb-4
+    }
+    h2 {
+        @apply text-xl font-bold border-b border-black py-2 mb-3
+    }
+    h3 {
+        @apply text-lg font-bold py-2 mb-2
+    }
+    h4 {
+        @apply text-base
+    }
+    blockquote {
+        @apply border-l-teal-500 text-teal-500 pl-1 ml-5
+    }
+    p > code {
+        @apply p-1
+    }
+    code {
+        @apply bg-teal-400 font-bold my-2
+    }
+    pre {
+        @apply block overflow-auto bg-teal-400 p-1 leading-5 my-2
+    }
+    table {
+        @apply border border-spacing-1 border-black my-4
+    }
+
+    td, th {
+        @apply border-2 border-gray-800
+        px-1
+    }
+    img {
+        @apply block max-w-[90%] my-8 mx-auto
+    }
+    ul {
+        @apply list-disc list-inside my-2
+    }
+    ul li {
+        @apply pl-4
+    }
+    ol {
+        @apply list-decimal list-inside my-2
+    }
+    ol li {
+        @apply pl-4
+    }
 }
